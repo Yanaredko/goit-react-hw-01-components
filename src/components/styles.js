@@ -6,7 +6,7 @@ export const styles = {
     padding: 0,
   },
   container: {
-    maxWidth: '960px',
+    maxWidth: '1280px',
     margin: '0 auto',
     padding: '20px',
     backgroundColor: '#fff',
@@ -21,13 +21,11 @@ export const styles = {
 
 export const profileStyles = {
   profile: {
-    display: 'flex',
-    alignItems: 'center',
     marginBottom: '20px',
   },
   avatar: {
-    width: '40px',
-    height: '40px',
+    width: '30px',
+    height: '30px',
     borderRadius: '50%',
     marginRight: '20px',
   },
@@ -63,6 +61,7 @@ export const statisticsStyles = {
     listStyle: 'none',
     padding: 0,
     display: 'flex',
+    gap: '20px',
   },
   statsItem: {
     marginRight: '20px',
@@ -79,10 +78,13 @@ export const statisticsStyles = {
 };
 
 export const friendListStyles = {
-  friendList: {
+    friendList: {
+    display: 'flex',
     listStyle: 'none',
     padding: 0,
-  },
+    gap: '40px',
+    },
+    
   friendItem: {
     display: 'flex',
     alignItems: 'center',
@@ -108,6 +110,6 @@ export const friendListStyles = {
   },
   friendName: {
     fontSize: '16px',
-    color: '#333',
+      color: '#333',
   },
 };

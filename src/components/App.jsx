@@ -12,7 +12,7 @@ import { styles } from './styles.js';
 
 const App = () => {
   return (
-    <div>
+    <div style={styles.container}>
       <h1>User Profile</h1>
       <Profile
         username={user.username}
@@ -20,13 +20,15 @@ const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
+        style={styles.profile}
       />
 
-      <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <Statistics title="Upload stats" stats={data} style={styles.statistics} />
+      <FriendList friends={friends} style={styles.friendList} />
+      <TransactionHistory items={transactions} style={styles.transactionHistory} />
     </div>
   );
 };
 
 export default App;
+
