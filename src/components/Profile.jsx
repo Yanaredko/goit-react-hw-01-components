@@ -1,8 +1,9 @@
 import React from 'react';
+import { profileStyles } from './styles';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div style={profileStyles.profile} className="profile">
       <div className="description">
         <img
           src={avatar}

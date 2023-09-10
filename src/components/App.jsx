@@ -8,6 +8,7 @@ import Profile from './Profile.jsx';
 import Statistics from './Statistics.jsx';
 import FriendList from './FriendList.jsx';
 import TransactionHistory from './TransactionHistory.jsx';
+import { styles } from './styles.js'; 
 
 const App = () => {
   return (
