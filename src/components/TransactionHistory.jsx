@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import styles from '../components/styles/TransactionHistory.scss';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
+    <table className={styles['transaction-history']}>
       <thead>
         <tr>
           <th>Type</th>
@@ -24,4 +26,16 @@ const TransactionHistory = ({ items }) => {
   );
 };
 
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 export default TransactionHistory;
+

@@ -1,0 +1,17 @@
+.transaction-history {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.transaction-history th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    text-align: left;
+    padding: 10px;
+}
+
+.transaction-history td {
+    padding: 10px;
+}
