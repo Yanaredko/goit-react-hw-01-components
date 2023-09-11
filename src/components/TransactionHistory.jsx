@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../components/styles/TransactionHistory.scss';
+import '../components/styles/TransactionHistory.scss';
 
 const TransactionHistory = ({ items }) => {
   return (
