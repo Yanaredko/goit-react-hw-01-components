@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import '../components/styles/TransactionHistory.scss';
+import '../components/styles/TransactionHistory.scss';
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table className={styles['transaction-history']}>
+    <table className="transaction-history">
       <thead>
         <tr>
           <th>Type</th>
@@ -38,4 +38,5 @@ TransactionHistory.propTypes = {
 };
 
 export default TransactionHistory;
+
 
