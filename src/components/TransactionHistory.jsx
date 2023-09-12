@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../components/styles/TransactionHistory.scss';
-// Import styles directly from the SCSS file, but you don't need to assign it to a variable
 
 const TransactionHistory = ({ items }) => {
   return (

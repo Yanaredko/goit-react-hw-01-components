@@ -4,13 +4,13 @@ import styles from '../components/styles/Statistics.scss';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className={styles.statistics}>
-      {title && <h2 className={styles.title}>{title}</h2>}
-      <ul className={styles['stat-list']}>
+    <section className="statistics">
+      {title && <h2 className="title">{title}</h2>}
+      <ul className="stat-list">
         {stats.map(({ id, label, percentage }) => (
-          <li className={styles.item} key={id}>
-            <span className={styles.label}>{label}</span>
-            <span className={styles.percentage}>{percentage}%</span>
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
