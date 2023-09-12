@@ -8,11 +8,11 @@ import Profile from './Profile.jsx';
 import Statistics from './Statistics.jsx';
 import FriendList from './FriendList.jsx';
 import TransactionHistory from './TransactionHistory.jsx';
-// import { styles } from './styles.js'; 
+import {styles} from './styles.js'; 
 
 const App = () => {
   return (
-    <div style={styles.container}>
+    <div>
       <h1>User Profile</h1>
       <Profile
         username={user.username}
@@ -23,9 +23,9 @@ const App = () => {
         style={styles.profile}
       />
 
-      <Statistics title="Upload stats" stats={data} style={styles.statistics} />
-      <FriendList friends={friends} style={styles.friendList} />
-      <TransactionHistory items={transactions} style={styles.transactionHistory} />
+      <Statistics title="Upload stats" stats={data}  />
+      <FriendList friends={friends}  />
+      <TransactionHistory items={transactions}  />
     </div>
   );
 };

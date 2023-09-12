@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../components/styles/Statistics.scss';
+import styles from '../components/styles/Statistics.scss';
 
 const Statistics = ({ title, stats }) => {
   return (
